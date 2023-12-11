@@ -1,0 +1,9 @@
+.header {
+  font-size: 32px;
+  color: red;
+  background-color: blue;
+  &__logo {
+    width: 100px;
+    height: 100px;
+  }
+}
