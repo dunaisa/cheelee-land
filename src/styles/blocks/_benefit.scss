@@ -1,0 +1,29 @@
+.benefit {
+  display: flex;
+  flex-direction: column;
+  margin: 0 0 99px;
+
+  &__heading {
+    color: $textColor;
+    font-size: 26px;
+    line-height: 38px;
+    font-weight: 700;
+    font-family: Montserrat, Helvetica, sans-serif;
+    margin: 0 0 40px;
+    padding: 0;
+    &_type {
+      &_accent {
+        color: $accentTextColor;
+      }
+    }
+  }
+
+  &__description {
+    font-size: 18px;
+    line-height: 33px;
+    font-weight: 400;
+    font-family: Montserrat, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+}

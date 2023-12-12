@@ -1,5 +1,11 @@
 .page {
+  max-width: 1512px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
   background-color: #140132;
-  font-size: 52px;
-  color: $accentTextColor;
+  color: $textColor;
+  padding: 0;
+  margin: 0 auto;
 }

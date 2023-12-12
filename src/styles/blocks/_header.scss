@@ -1,9 +1,167 @@
 .header {
-  font-size: 32px;
-  color: red;
-  background-color: blue;
-  &__logo {
-    width: 100px;
-    height: 100px;
+  padding: 0 80px;
+  margin: 0;
+
+  &__container {
+    padding: 20px 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
   }
+
+  &__logo {
+    max-width: 92px;
+    width: 100%;
+  }
+
+  &__nav {
+    max-width: 575px;
+    width: 100%;
+  }
+
+  &__list {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+  }
+
+  &__link {
+    text-decoration: none;
+    font-size: 16px;
+    line-height: 18px;
+    font-weight: 400;
+    color: #5E636E;
+    font-family: Montserrat, Helvetica, sans-serif;
+    &_type_active {
+      color: $accentTextColor;
+      font-weight: 700;
+    }
+  }
+
+  &__audit-by-img {
+    max-width: 176px;
+    width: 100%;
+    padding: 0;
+    margin: 0 20px 0 0;
+  }
+
+}
+
+.container {
+  &__right-col {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.currency {
+  display: flex;
+}
+
+.rate {
+  display: flex;
+  margin: 0 30px 0 0;
+  &__icon {
+    width: 30px;
+    height: 30px;
+  }
+  &__container {
+    margin: 0 0 0 5px;
+  }
+
+  &__name {
+    font-size: 8px;
+    line-height: 10px;
+    font-weight: 400;
+    color: #E5F7FF;
+    font-family: Montserrat, Helvetica, sans-serif;
+    text-transform: uppercase;
+    display: block;
+  }
+
+  &__value {
+    font-size: 16px;
+    line-height: 18px;
+    font-weight: 700;
+    color: #FFFFFF;
+    font-family: Montserrat, Helvetica, sans-serif;
+    position: relative;
+
+    &::after {
+      content: '';
+      display: block;
+      position: absolute;
+      right: -10px;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 7px;
+      height: 5px;
+      background-image: url(../../images/up-currency-arrow.png);
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: 100% 100%;
+    }
+  }
+}
+
+.lang-select {
+  position: relative;
+  width: 38px;
+
+  &__btn {
+    width: 100%;
+    color: #5E636E;
+    font-size: 16px;
+    line-height: 18px;
+    font-weight: 400;
+    font-family: Montserrat, Helvetica, sans-serif;
+
+    background-color: transparent;
+    padding: 0;
+    border: none;
+    border-radius: 0.25rem;
+    cursor: pointer;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    &::after {
+      content: '';
+      display: block;
+      position: absolute;
+      right: 0;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 10px;
+      height: 5px;
+      background-image: url(../../images/lang-arrow.png);
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: 100% 100%;
+      pointer-events: none;
+    }
+  }
+}
+
+.lang {
+  position: absolute;
+  bottom: -20px;
+  left: 0;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  color: #5E636E;
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 400;
+  font-family: Montserrat, Helvetica, sans-serif;
+  
+  
+
 }

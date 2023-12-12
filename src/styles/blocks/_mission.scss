@@ -1,0 +1,33 @@
+.mission {
+  display: flex;
+  flex-direction: column;
+  margin: 0 0 40px;
+
+  &__heading {
+    color: $textColor;
+    font-size: 72px;
+    line-height: 74px;
+    font-weight: 900;
+    font-family: Montserrat, Helvetica, sans-serif;
+    margin: 0 0 40px;
+    padding: 0;
+    &_type {
+      &_accent {
+        color: $accentTextColor;
+      }
+    }
+  }
+
+  
+
+  &__description {
+    
+    font-size: 26px;
+    line-height: 38px;
+    font-weight: 400;
+    font-family: Montserrat, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+
+  }
+}
