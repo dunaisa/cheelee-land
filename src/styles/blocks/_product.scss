@@ -1,0 +1,44 @@
+.product {
+  height: 822px;
+
+  display: flex;
+  align-items: center;
+
+  background-image: url(../../images/two-phones-img.png);
+  background-size: 1088px;
+  background-repeat: no-repeat;
+  background-position: bottom right; 
+
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 0 0 195px;
+    max-width: 344px;
+  }
+
+  &__heading {
+    color: $textColor;
+    font-size: 26px;
+    line-height: 38px;
+    font-weight: 700;
+    font-family: Montserrat, Helvetica, sans-serif;
+    padding: 0;
+    margin: 0 0 20px;
+    &_type {
+      &_accent {
+        color: $accentTextColor;
+      }
+    }
+  }
+
+  &__descripton {
+    font-size: 18px;
+    line-height: 33px;
+    font-weight: 400;
+    font-family: Montserrat, Helvetica, sans-serif;
+    padding: 0;
+    margin: 0;
+  }
+
+}

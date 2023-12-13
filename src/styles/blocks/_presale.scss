@@ -1,0 +1,193 @@
+.presale {
+  &__border {
+    background-image: url(../../images/border-image.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 100% 100%;
+    position: relative;
+  }
+  
+  &__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 118px;
+    background-image: linear-gradient(rgba(113, 86, 251, 0.2), rgba(255, 13, 255, 0.2));
+    border-radius: 40px;
+  }
+  &__text {
+    color: $textColor;
+    font-size: 26px;
+    line-height: 38px;
+    font-weight: 700;
+    font-family: Montserrat, Helvetica, sans-serif;
+    padding: 0;
+    margin: 0;
+    &_type {
+      &_accent {
+        color: $accentTextColor;
+      }
+    }
+  }
+  &__btn {
+    color: $textColor;
+    font-size: 26px;
+    line-height: 38px;
+    font-weight: 700;
+    font-family: Montserrat, Helvetica, sans-serif;
+    background-color: #7156FB;
+    border-radius: 40px;
+    border: none;
+    outline: none;
+    padding: 28px 40px;
+    margin: 0;
+    cursor: pointer;
+  }
+}
+
+.arrow-top {
+  display: flex;
+  position: absolute;
+  top: -9px;
+  left: 25.5%;
+  width: 36px;
+  height: 18px;
+  &__first,
+  &__second,
+  &__third {
+    background-image: url(../../images/arrow-animate.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 100% 100%;
+    width: 12px;
+    height: 18px;
+  }
+  &__first {
+    animation: arrow-first 1.7s linear infinite;
+    animation-delay: 1.5s;
+  }
+
+  &__second {
+    animation: arrow-second 1.7s linear infinite;
+    animation-delay: 1s;
+    
+  }
+  &__third {
+    animation: arrow-third 1.7s linear infinite;
+    
+  }
+
+  @keyframes arrow-first {
+    0% {
+      opacity: 0;
+    }
+  
+    50% {
+      opacity: 0.3;
+    }
+  
+    100% {
+      opacity: 0;
+    }
+  }
+  @keyframes arrow-second {
+    0% {
+      opacity: 0;
+    }
+  
+    50% {
+      opacity: 0.5;
+    }
+  
+    100% {
+      opacity: 0;
+    }
+  }
+  @keyframes arrow-third {
+    0% {
+      opacity: 1;
+    }
+  
+    50% {
+      opacity: 0;
+    }
+  
+    100% {
+      opacity: 1;
+    }
+  }
+}
+
+.arrow-bottom {
+  display: flex;
+  position: absolute;
+  bottom: -9px;
+  right: 25.5%;
+  width: 36px;
+  height: 18px;
+  rotate: 180deg;
+  &__first,
+  &__second,
+  &__third {
+    background-image: url(../../images/arrow-animate.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 100% 100%;
+    width: 12px;
+    height: 18px;
+  }
+  &__first {
+    animation: arrow-first 1.7s linear infinite;
+    animation-delay: 1.5s;
+  }
+
+  &__second {
+    animation: arrow-second 1.7s linear infinite;
+    animation-delay: 1s;
+    
+  }
+  &__third {
+    animation: arrow-third 1.7s linear infinite;
+    
+  }
+
+  @keyframes arrow-first {
+    0% {
+      opacity: 0;
+    }
+  
+    50% {
+      opacity: 0.3;
+    }
+  
+    100% {
+      opacity: 0;
+    }
+  }
+  @keyframes arrow-second {
+    0% {
+      opacity: 0;
+    }
+  
+    50% {
+      opacity: 0.5;
+    }
+  
+    100% {
+      opacity: 0;
+    }
+  }
+  @keyframes arrow-third {
+    0% {
+      opacity: 1;
+    }
+  
+    50% {
+      opacity: 0;
+    }
+  
+    100% {
+      opacity: 1;
+    }
+  }
+}

@@ -36,9 +36,13 @@
     font-weight: 400;
     color: #5E636E;
     font-family: Montserrat, Helvetica, sans-serif;
+    transition: 0.3s;
     &_type_active {
       color: $accentTextColor;
       font-weight: 700;
+    }
+    &:hover {
+      color: $textColor;
     }
   }
 
@@ -161,7 +165,4 @@
   line-height: 18px;
   font-weight: 400;
   font-family: Montserrat, Helvetica, sans-serif;
-  
-  
-
 }
