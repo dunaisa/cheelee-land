@@ -20,6 +20,13 @@
     display: flex;
     flex-direction: column;
     max-width: 348px;
+    &:nth-child(3) {
+      background-image: url(../../images/coins.png);
+      background-repeat: no-repeat;
+      background-position: 95% 67%;
+      background-size: 102px 97px;
+    }
+
     &:nth-child(4) {
       grid-column: 3;
     }
