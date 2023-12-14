@@ -1,7 +1,7 @@
 .header {
   padding: 0 80px;
   margin: 0;
-
+  position: relative;
   &__container {
     padding: 20px 0;
     margin: 0;
@@ -13,11 +13,15 @@
   &__logo {
     max-width: 92px;
     width: 100%;
+    object-fit: cover;
   }
 
   &__nav {
     max-width: 575px;
     width: 100%;
+    @include media("max", "xl") {
+      display: none;
+    }
   }
 
   &__list {
@@ -44,6 +48,10 @@
     &:hover {
       color: $textColor;
     }
+
+    @include media("max", "xl") {
+      order: 1;
+    }
   }
 
   &__audit-by-img {
@@ -52,7 +60,6 @@
     padding: 0;
     margin: 0 20px 0 0;
   }
-
 }
 
 .container {
@@ -60,6 +67,9 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+  }
+  @include media("max", "xl") {
+    order: 2;
   }
 }
 
