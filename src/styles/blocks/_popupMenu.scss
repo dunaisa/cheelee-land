@@ -52,31 +52,72 @@
     text-transform: uppercase;
     margin: 0;
     padding: 0;
+    &_type_active {
+      color: $accentTextColor;
+    }
   }
 
 }
 
 .text {
-  &:hover {
+  letter-spacing: -5px;
+  &:hover 
     &__letter {
-      // animation: wiggleWiggle 2.25s infinite;
-      // animation-delay: 0.25s;
-      color: red;
-    }
-
-    // @keyframes wiggleWiggle {
-    //   20%,
-    //   100% {
-    //     transform: translate(0, 3px);
-    //   }
+      display: inline-block;
+      color: $accentTextColor;
+      animation: wiggleWiggle 0.3s ease-in-out;
+      
     
-    //   0% {
-    //     transform: translate(0, 0px);
-    //   }
-    //   10% {
-    //     transform: translate(0, 3px);
-    //   }
-    // }
+    &:nth-child(2) {
+      animation-delay: 0.15s;    
+    }
+    &:nth-child(3) {
+      animation-delay: 0.20s;    
+    }
+    &:nth-child(4) {
+      animation-delay: 0.25s;    
+    }
+    &:nth-child(5) {
+      animation-delay: 0.30s;    
+    }
+    &:nth-child(6) {
+      animation-delay: 0.35s;    
+    }
+    &:nth-child(7) {
+      animation-delay: 0.40s;    
+    }
+    &:nth-child(8) {
+      animation-delay: 0.45s;    
+    }
+    &:nth-child(9) {      
+      animation-delay: 0.50s;    
+    }
+    &:nth-child(10) {
+      animation-delay: 0.55s;    
+    }
+    &:nth-child(11) {
+      animation-delay: 0.60s;    
+    }
+    &:nth-child(12) {
+      animation-delay: 0.65s;    
+    }
+    &:nth-child(13) {      
+      animation-delay: 0.70s;    
+    }
   }
+
+    @keyframes wiggleWiggle {
+    
+      0% {
+        transform: translate(0, 0px);
+      }
+      50% {
+        transform: translate(0, -30px);
+      }
+      100% {
+        transform: translate(0, 0);
+      }
+    }
+  
   
 }
